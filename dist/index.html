@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../src/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="sm:">
+      <nav>
+        <div>
+          <img src="../images/y-comb.png" alt="logo" class="logo" />
+        </div>
+        <div>
+          <ul>
+            <li id="home">Home</li>
+            <li id="about">About us</li>
+            <li id="page">Page</li>
+            <li>News</li>
+            <li>Event</li>
+          </ul>
+        </div>
+
+        <div class="flex gap-2">
+          <button class="bg-gray-600 text-white px-4 py-2 rounded-md">signup</button>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-yellow-600">login</button>
+        </div>
+      </nav>
+    </header>
+
+  
+  </body>
+
+
+  <script>
+    let about = document.getElementById('about');
+
+    about.addEventListener('click', ()=> {
+      window.location.href = './OtherHtmlpages/aboutus.html'
+    })
+  </script>
+</html>
